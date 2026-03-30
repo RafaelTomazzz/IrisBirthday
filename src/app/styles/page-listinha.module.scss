@@ -1,0 +1,54 @@
+
+$color-primary: #547EFF;
+$color-primary-dark: #275dff;
+$color-secondary: #BE4C66;
+
+.main__container{
+    padding: 1.5rem 0;
+}
+
+.lista__container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn{
+    color: white;
+    background-color: $color-primary;
+    border-radius: 1.5rem;
+    padding: 0.25rem 1rem;
+    border: solid;
+    border-color: transparent;
+    border-width: 2px;
+    &:hover{
+        background: $color-primary-dark;
+        transition: ease 300ms;
+        outline: none;
+    }
+    &:active{
+        border: none;
+        outline: none;
+    }
+    &--icon{
+        margin-right: 0.5rem;
+    }
+    &--navbar{
+        background-color: transparent;
+        &--sound{
+            font-size: 1.25rem;
+            line-height: 20px;
+        }
+        &:hover{
+            background-color: transparent;
+            border-style: solid;
+            border-width: 2px;
+            border-color: white;
+            transition: ease 300ms;
+        }
+    }
+    &__lista{
+        background-color: $color-secondary;
+    }
+}
