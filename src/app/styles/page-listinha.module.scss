@@ -7,11 +7,17 @@ $color-secondary: #BE4C66;
     padding: 1.5rem 0;
 }
 
-.lista__container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+.lista{
+    padding: 1.5rem;
+    background-color: $color-secondary;
+    border-radius: 1rem;
+    &__container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 2rem; 
+    }
 }
 
 .btn{

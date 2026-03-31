@@ -1,5 +1,4 @@
 import SplineComponent from "@/components/SplineComponent";
-import { DialogBox } from "@/components/DialogBox";
 import { Header } from "@/components/Header";
 import styles from "../styles/page-listinha.module.scss"
 
@@ -18,7 +17,12 @@ export default function Home() {
             <button className={`${styles.btn} ${styles.btn__lista}`}>Lista de Afazeres</button>
             <button className={`${styles.btn} ${styles.btn__lista}`}>Lista de Oque Quero Comprar</button>
           </div>
-        </div>
+
+          <div className="row justify-content-center"></div>
+            <section className={`${styles.lista} col-8`}>
+
+            </section>
+          </div>
       </div>
     </div>
   );
