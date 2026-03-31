@@ -6,7 +6,7 @@ export function Header() {
         <header className={`${styles.header} container`}>
             <Logo />
 
-            <nav>
+            <nav className={styles.navbar__dektop}>
                 <button className="btn btn--navbar">
                     <i className="fa-solid fa-house-chimney btn--icon"></i>
                     Inicio
@@ -23,10 +23,16 @@ export function Header() {
                     <i className="fa-solid fa-dove btn--icon"></i>
                     Flap Iris
                 </button>
-
             </nav>
 
-            <button className="btn btn--navbar btn--navbar--sound">
+            <nav className={styles.navbar__mobile}>
+                <button className="btn btn--navbar">
+                    <i className="fa-solid fa-bars btn--icon"></i>
+                    Menu
+                </button>
+            </nav>
+
+            <button className={`${styles.navbar__dektop} btn btn--navbar btn--navbar--sound`}>
                 <i className="fa-solid fa-volume-high"></i>                
             </button>
         </header>

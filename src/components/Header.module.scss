@@ -5,3 +5,27 @@
     display: flex;
     justify-content: space-between;
 }
+
+.navbar{
+    &__mobile{
+        display: none;
+    }
+    &__dektop{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 576px){    
+    .header{
+        padding: 1rem 0.75rem;
+    }
+
+    .navbar{
+        &__mobile{
+            display: block;
+        }
+        &__dektop{
+            display: none;
+        }
+    }
+}

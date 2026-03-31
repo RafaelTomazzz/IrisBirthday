@@ -5,19 +5,20 @@ $color-secondary: #BE4C66;
 .dialog{
     background-color: white;
     border-style: solid;
-    border-width: 1px;
+    border-width: 2px;
     border-color: rgb(218, 217, 217);
     padding: 1.25rem;
     border-radius: 1.5rem;
     display: flex;
+    cursor: pointer;
     &__container{
         width: 100%;
         height: calc(100vh - 116px);
     }
     &__img{
-        background: red;
+        padding: 0;
     }
     &__text{
-        
+        font-size: 1.25rem;
     }
 }
