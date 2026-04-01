@@ -4,6 +4,7 @@ import SplineComponent from "@/components/SplineComponent";
 import { Header } from "@/components/Header";
 import styles from "../styles/page-listinha.module.scss";
 import { useEffect, useState } from "react";
+import Spline from '@splinetool/react-spline';
 
 export default function Home() {
   const [listas, setListas] = useState([]);
@@ -11,8 +12,8 @@ export default function Home() {
 
   useEffect(() => {
     async function fetchData() {
-      const res = await fetch("/api/listas"); // 🔥 coloque a barra /
-      const data = await res.json(); // 🔥 pegar JSON
+      const res = await fetch("/api/listas"); 
+      const data = await res.json(); 
 
       console.log(data);
 
@@ -29,7 +30,10 @@ export default function Home() {
 
   return (
     <div className="spline__container">
-      <SplineComponent />
+      <Spline
+        lassName={styles.spline}
+        scene="https://prod.spline.design/Jvs6vFp4MW0m85xC/scene.splinecode"
+      />
 
       <div>
         <Header />
