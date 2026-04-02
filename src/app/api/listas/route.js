@@ -21,7 +21,7 @@ export async function POST(req) {
 
     const file = files.find(f => f.nome === body.nome)
     if (file) {
-        return alert("Esta lista já existe")
+        return Response.json({ error: "Esta lista já existe" }, { status: 400 })
     }
 
     const newFile = {

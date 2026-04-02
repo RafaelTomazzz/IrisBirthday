@@ -10,7 +10,7 @@
     "lint": "biome check",
     "format": "biome format --write",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@splinetool/react-spline": "^4.1.0",

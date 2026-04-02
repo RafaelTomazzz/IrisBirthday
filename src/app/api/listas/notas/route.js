@@ -9,7 +9,7 @@ export async function GET(nome) {
 
     const file = files.find(f => f.nome === nome)
 
-    return file
+    return Response.json(file)
 }
 
 export async function POST(req) {
