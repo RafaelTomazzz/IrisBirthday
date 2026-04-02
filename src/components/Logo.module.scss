@@ -1,6 +1,8 @@
 .logo{
     font-size: 1.25rem;
     gap: 0.25rem;
+    display: flex;
+    align-items: center;
     &__text{
         all: unset;
         font-weight: 400;
@@ -8,5 +10,8 @@
     }
     &__icon{
         font-size: 1.5rem;
+    }
+    &__img{
+        width: 36px;
     }
 }

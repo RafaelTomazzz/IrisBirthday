@@ -1,29 +1,42 @@
-
 $color-primary: #547EFF;
 $color-primary-dark: #275dff;
 $color-secondary: #BE4C66;
 
-.main__container{
+.title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.main__container {
     padding: 1.5rem 0;
 }
 
-.lista{
+.scroll{
+    max-height: 600px;
+}
+
+.lista {
     padding: 1.5rem;
     background-color: white;
     border-radius: 1rem;
     border-style: solid;
     border-width: 2px;
     border-color: rgb(218, 217, 217);
-    &__container{
+    max-height: 600px;
+    overflow-y: auto;
+
+    &__container {
         width: 100%;
         display: flex;
         justify-content: center;
         gap: 1rem;
-        margin-bottom: 2rem; 
+        margin-bottom: 2rem;
+        padding: 0 1rem;
     }
 }
 
-.btn{
+.btn {
     color: white;
     background-color: $color-primary;
     border-radius: 1.5rem;
@@ -31,25 +44,31 @@ $color-secondary: #BE4C66;
     border: solid;
     border-color: transparent;
     border-width: 2px;
-    &:hover{
+
+    &:hover {
         background: $color-primary-dark;
         transition: ease 300ms;
         outline: none;
     }
-    &:active{
+
+    &:active {
         border: none;
         outline: none;
     }
-    &--icon{
+
+    &--icon {
         margin-right: 0.5rem;
     }
-    &--navbar{
+
+    &--navbar {
         background-color: transparent;
-        &--sound{
+
+        &--sound {
             font-size: 1.25rem;
             line-height: 20px;
         }
-        &:hover{
+
+        &:hover {
             background-color: transparent;
             border-style: solid;
             border-width: 2px;
@@ -57,16 +76,89 @@ $color-secondary: #BE4C66;
             transition: ease 300ms;
         }
     }
-    &__lista{
+
+    &__lista {
         background-color: $color-secondary;
     }
 }
 
-.spline{
+.spline {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
     z-index: -1;
+}
+
+.table {
+    width: 100%;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
+
+    &__row {
+
+        &_title {
+            background-color: $color-primary-dark !important;
+            th {
+                padding: 0.5rem !important;
+                color: white;
+            }
+        }
+
+        &:nth-child(odd) {
+            background-color: $color-primary;
+        }
+
+        &:nth-child(even) {
+            background-color: rgb(235, 235, 235);
+        }
+
+        td {
+            padding: 0.5rem !important;
+        }
+    }
+
+    &__button{
+        background-color: transparent;
+        border: none;
+        width: 20px;
+        height: 20px;
+        padding: 0;
+    }
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    &__label{
+        color: black;
+    }
+    &__textarea{
+        border-radius: 0.75rem;
+        border-width: 2px;
+        border-color: rgb(148, 148, 148);
+        padding: 0.5rem;
+        &:focus{
+            border-color: $color-primary;
+            outline: none;
+        }
+    }
+    &__button{
+        background-color: $color-primary;
+        padding: 0.25rem 1rem;
+        color: white;
+        border: none;
+        border-radius: 2rem;
+        width: fit-content;
+        &:hover{
+            background-color: $color-primary-dark;
+            transition: ease 200ms;
+        }
+    }
 }

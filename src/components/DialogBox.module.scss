@@ -3,6 +3,8 @@ $color-primary-dark: #275dff;
 $color-secondary: #BE4C66;
 
 .dialog{
+    width: 100%;
+    height: fit-content;
     background-color: white;
     border-style: solid;
     border-width: 2px;
@@ -11,14 +13,19 @@ $color-secondary: #BE4C66;
     border-radius: 1.5rem;
     display: flex;
     cursor: pointer;
+    box-sizing:content-box;
     &__container{
         width: 100%;
         height: calc(100vh - 116px);
     }
     &__img{
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
         padding: 0;
     }
     &__text{
-        font-size: 1.25rem;
+        font-size: 1rem;
+        margin-bottom: 0;
     }
 }

@@ -1,62 +1,62 @@
 [
-    {
-        "nome": "PIBID",
-        "notes": [
-            {
-                "descricao": "Nota 1",
-                "data": "2026-03-30T10:00:00Z",
-                "check": false
-            },
-            {
-                "descricao": "Nota 2",
-                "data": "2026-03-30T10:00:00Z",
-                "check": true
-            },
-            {
-                "descricao": "Nota 3",
-                "data": "2026-03-30T10:00:00Z",
-                "check": false
-            }
-        ]
-    },
-    {
-        "nome": "Lista de Compras",
-        "notes": [
-            {
-                "descricao": "Nota 1",
-                "data": "2026-03-30T10:00:00Z",
-                "check": false
-            },
-            {
-                "descricao": "Nota 2",
-                "data": "2026-03-30T10:00:00Z",
-                "check": true
-            },
-            {
-                "descricao": "Nota 3",
-                "data": "2026-03-30T10:00:00Z",
-                "check": false
-            }
-        ]
-    },
-    {
-        "nome": "Coisas que eu quero fazer",
-        "notes": [
-            {
-                "descricao": "Nota 1",
-                "data": "2026-03-30T10:00:00Z",
-                "check": false
-            },
-            {
-                "descricao": "Nota 2",
-                "data": "2026-03-30T10:00:00Z",
-                "check": true
-            },
-            {
-                "descricao": "Nota 3",
-                "data": "2026-03-30T10:00:00Z",
-                "check": false
-            }
-        ]
-    }
+  {
+    "nome": "PIBID",
+    "notes": [
+      {
+        "descricao": "Nota 1",
+        "data": "2026-03-30T10:00:00Z",
+        "check": false
+      },
+      {
+        "descricao": "Nota 2",
+        "data": "2026-03-30T10:00:00Z",
+        "check": false
+      },
+      {
+        "descricao": "Nota 3",
+        "data": "2026-03-30T10:00:00Z",
+        "check": false
+      }
+    ]
+  },
+  {
+    "nome": "Lista de Compras",
+    "notes": [
+      {
+        "descricao": "Arroz",
+        "data": "2026-03-30T10:00:00Z",
+        "check": false
+      },
+      {
+        "descricao": "Feijão",
+        "data": "2026-03-30T10:00:00Z",
+        "check": false
+      },
+      {
+        "descricao": "Macarrão",
+        "data": "2026-03-30T10:00:00Z",
+        "check": false
+      }
+    ]
+  },
+  {
+    "nome": "Coisas que eu quero fazer",
+    "notes": [
+      {
+        "descricao": "Nota 1",
+        "data": "2026-03-30T10:00:00Z",
+        "check": false
+      },
+      {
+        "descricao": "Nota 2",
+        "data": "2026-03-30T10:00:00Z",
+        "check": false
+      },
+      {
+        "descricao": "Nota 3",
+        "data": "2026-03-30T10:00:00Z",
+        "check": false
+      }
+    ]
+  }
 ]

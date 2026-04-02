@@ -1,4 +1,4 @@
-.header{
+.header {
     padding: 1rem 0;
     font-size: 1rem;
     color: white;
@@ -6,25 +6,54 @@
     justify-content: space-between;
 }
 
-.navbar{
-    &__mobile{
+.navbar {
+    &__mobile {
         display: none;
     }
-    &__dektop{
+
+    &__dektop {
         display: block;
     }
 }
 
-@media screen and (max-width: 576px){    
-    .header{
+.menu {
+    padding: 1rem;
+    width: 300px;
+    background-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(218, 217, 217);
+    border-radius: 0.75rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    &__container {
+        position: absolute;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgb(0, 0, 0, 0.5);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header {
         padding: 1rem 0.75rem;
     }
 
-    .navbar{
-        &__mobile{
+    .navbar {
+        &__mobile {
             display: block;
         }
-        &__dektop{
+
+        &__dektop {
             display: none;
         }
     }
