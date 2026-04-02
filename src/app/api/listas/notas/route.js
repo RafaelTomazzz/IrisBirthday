@@ -3,7 +3,8 @@ import path from "path"
 
 const filePath = path.join(process.cwd(), "data", "files.json")
 
-export async function GET(nome) {
+export async function GET(request) {
+    const nome = request.nextUrl.searchParams.get('nome')
     const data = await readFile(filePath, "utf-8")
     const files = JSON.parse(data)
 
@@ -42,9 +43,14 @@ export async function DELETE(req) {
     const body = await req.json()
 
     const { nome, index } = body
+    const indexNumber = Number(index)
 
     if (index === undefined) {
         return Response.json({ error: "Index não enviado" }, { status: 400 })
+    }
+
+    if (isNaN(indexNumber)) {
+        return Response.json({ error: "Index inválido" }, { status: 400 })
     }
 
     const data = await readFile(filePath, "utf-8")
@@ -56,11 +62,11 @@ export async function DELETE(req) {
         return Response.json({ error: "Arquivo não encontrado" }, { status: 404 })
     }
 
-    if (!file.notes || !file.notes[index]) {
+    if (!file.notes || indexNumber < 0 || indexNumber >= file.notes.length) {
         return Response.json({ error: "Nota não encontrada" }, { status: 404 })
     }
 
-    const removedNote = file.notes.splice(index, 1)
+    const removedNote = file.notes.splice(indexNumber, 1)
 
     await writeFile(filePath, JSON.stringify(files, null, 2))
 
